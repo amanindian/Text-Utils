@@ -65,7 +65,7 @@ export default function TextForm(props) {
                 <p>Your text length is :{text.length}</p>
                 <p>Your text length is : {text.split(" ").length}</p>
                 <p>You will take <b> {0.008 * text.split(" ").length}</b> minute for reading this text</p>
-                <h1 className='red' >Text Preview</h1>
+                <h1>Text Preview</h1>
                 <p className='red'>{text.length > 0 ? text : "Enter Somthing in TextBox"}</p>
             </div>
         </>
