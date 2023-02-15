@@ -64,7 +64,7 @@ export default function TextForm(props) {
             } className={`container py-5 px-5  text-${props.Mode === "dark" ? "light" : "dark"} `}>
                 <p>Your text length is :{text.length}</p>
                 <p>Your text length is : {text.split(" ").length}</p>
-                <p>Your will take <b> {0.008 * text.split(" ").length}</b> minute for reading this text</p>
+                <p>You will take <b> {0.008 * text.split(" ").length}</b> minute for reading this text</p>
                 <h1>Text Preview</h1>
                 <p className='red'>{text.length > 0 ? text : "Enter Somthing in TextBox"}</p>
             </div>
