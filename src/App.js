@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar.js'
 import Alert from './Components/Alert.js'
-import Textform from './Components/Textform.js'
+import TextForm from './Components/TextForm.js'
 import React, { useState } from 'react'
 
 
@@ -37,7 +37,7 @@ function App() {
     <>
       <Navbar title="NavaBar" Mode={Mode} onMode={onModef} />
       <Alert Popup={Popup} />
-      <Textform Showpopup={Showpopup} heading="Enter the text to analyze below" Mode={Mode} />
+      <TextForm Showpopup={Showpopup} heading="Enter the text to analyze below" Mode={Mode} />
     </>
   );
 }

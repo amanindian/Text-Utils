@@ -26,7 +26,7 @@ export default function Textform(props) {
         }
     }
 
-    const hendleClearClick = () => {
+    const hendleClearClick = () => { 
         if (!text.length > 0) {
             props.Showpopup("Your TextBox is already clear please Enter Sonthing", "danger")
         } else {
