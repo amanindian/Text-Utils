@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types'
 
-export default function Textform(props) {
+export default function TextForm(props) {
     const [text, SetText] = useState("");
     const inputRef = useRef(null);
 
