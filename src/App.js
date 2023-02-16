@@ -30,7 +30,7 @@ function App() {
     })
     setTimeout(() => {
       setPopup(null)
-    }, 1500)
+    }, 3000)
   }
 
   return (
