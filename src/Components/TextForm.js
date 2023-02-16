@@ -114,9 +114,9 @@ export default function TextForm(props) {
 
 
 
-Textform.defaultProps = {
+TextForm.defaultProps = {
     heading: `This is Your heading`
 }
-Textform.propType = {
+TextForm.propType = {
     heading: PropTypes.string
 }
