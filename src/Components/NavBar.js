@@ -48,7 +48,7 @@ function Navbar(props) {
                     <a
                       class="dropdown-item"
                       title="amanindian"
-                      target="_blank"
+                      rel="noopener"
                       href="https://amanindian.netlify.app/"
                     >
                       Portfolio Website
@@ -58,7 +58,7 @@ function Navbar(props) {
                     <a
                       class="dropdown-item"
                       title="ShopNow"
-                      target="_blank"
+                      rel="noopener"
                       href="https://amanshopnow.netlify.app/"
                     >
                       E-Commerce
@@ -76,9 +76,8 @@ function Navbar(props) {
               </li>
             </ul>
             <div
-              className={`form-check form-switch text-${
-                props.Mode === "dark" ? "light" : "dark"
-              }`}
+              className={`form-check form-switch text-${props.Mode === "dark" ? "light" : "dark"
+                }`}
             >
               <input
                 type="checkbox"
@@ -91,11 +90,10 @@ function Navbar(props) {
                 className="form-check-label"
                 htmlFor="flexSwitchCheckDefault"
               >
-                {`${
-                  props.Mode === "light"
-                    ? "Enable Dark Mode"
-                    : "Disable Dark Mode"
-                }`}
+                {`${props.Mode === "light"
+                  ? "Enable Dark Mode"
+                  : "Disable Dark Mode"
+                  }`}
               </label>
             </div>
           </div>
