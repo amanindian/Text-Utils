@@ -36,7 +36,7 @@ function Navbar(props) {
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -68,7 +68,7 @@ function Navbar(props) {
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" title="Make in future" href="#">
+                    <a class="dropdown-item" title="Make in future" href="/">
                       Something else here
                     </a>
                   </li>
