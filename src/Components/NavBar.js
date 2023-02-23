@@ -48,17 +48,19 @@ function Navbar(props) {
                     <a
                       class="dropdown-item"
                       title="amanindian"
-                      rel="noopener"
+                      target="_blank"
+                      rel="noreferrer"
                       href="https://amanindian.netlify.app/"
                     >
                       Portfolio Website
                     </a>
-                  </li>
+                  </li> 
                   <li>
                     <a
                       class="dropdown-item"
                       title="ShopNow"
-                      rel="noopener"
+                      target="_blank"
+                      rel="noreferrer"
                       href="https://amanshopnow.netlify.app/"
                     >
                       E-Commerce
