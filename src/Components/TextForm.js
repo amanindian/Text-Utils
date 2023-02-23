@@ -99,9 +99,8 @@ export default function TextForm(props) {
           minWidth: "100%",
           paddingTop: "60px",
         }}
-        className={`container px-5 text-${
-          props.Mode === "dark" ? "light" : "dark"
-        }`}
+        className={`container px-5 text-${props.Mode === "dark" ? "light" : "dark"
+          }`}
       >
         <h1>{props.heading}</h1>
         <textarea
@@ -145,22 +144,34 @@ export default function TextForm(props) {
       </div>
       <div
         style={{ minWidth: "100%" }}
-        className={`container py-5 px-5  text-${
-          props.Mode === "dark" ? "light" : "dark"
-        } `}
+        className={`container py-5 px-5  text-${props.Mode === "dark" ? "light" : "dark"
+          } `}
       >
         <p>Your Characters length is : {text.length > 0 ? text.length : 0}</p>
         <p>
-          Your Word length is : {text.length > 0 ? text.split(" ").length : 0}
+          Your Word length is :{" "}
+          {
+            text.split(" ").filter((element) => {
+              return element.length !== 0;
+            }).length
+          }
         </p>
         <p>
           You will take{" "}
-          <b> {text.length > 0 ? 0.008 * text.split(" ").length : 0}</b> minute
-          for reading this text
+          <b>
+            {" "}
+            {text.length > 0
+              ? 0.008 *
+              text.split(" ").filter((element) => {
+                return element.length !== 0;
+              }).length
+              : 0}
+          </b>{" "}
+          minute for reading this text
         </p>
         <h1>Text Preview</h1>
         <p className="red">
-          {text.length > 0 ? text : "Enter Somthing in TextBox"}
+          <i>{text.length > 0 ? text : "Enter Somthing in TextBox"}</i>
         </p>
       </div>
     </>

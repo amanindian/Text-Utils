@@ -17,8 +17,7 @@ function About(props) {
         Our website includes tools for text manipulation, analysis, formatting,
         and more. Need to convert a block of text from uppercase to lowercase,
         or vice versa? No problem. Want to count the number of words or
-        characters in your text? We've got you covered. Need to generate
-        placeholder text for your designs? We can help with that too.
+        characters in your text? We've got you covered.
       </p>{" "}
       <p className="AboutPara">
         At Text Utilities, we're committed to making text-related tasks as easy
