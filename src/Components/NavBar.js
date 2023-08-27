@@ -61,7 +61,7 @@ function Navbar(props) {
                       title="ShopNow"
                       target="_blank"
                       rel="noreferrer"
-                      href="https://amanshopnow.netlify.app/"
+                      href="https://shopnowreact.netlify.app/"
                     >
                       E-Commerce
                     </a>
