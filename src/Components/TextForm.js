@@ -1,9 +1,25 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 
 export default function TextForm(props) {
   const [text, SetText] = useState("");
   const inputRef = useRef(null);
+
+
+
+
+  useEffect(() => {
+    // Load text from local storage when the component mounts
+    const storedText = localStorage.getItem("text");
+    if (storedText) {
+      SetText(storedText);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Store text in local storage whenever it changes
+    localStorage.setItem("text", text);
+  }, [text]);
 
   const hendleUpClick = () => {
     if (!text.length > 0) {
@@ -91,6 +107,7 @@ export default function TextForm(props) {
   const hendleonChange = (event) => {
     SetText(event.target.value);
   };
+
 
   return (
     <>

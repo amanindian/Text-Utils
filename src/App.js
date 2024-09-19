@@ -5,6 +5,7 @@ import TextForm from "./Components/TextForm.js";
 import About from "./Components/About.js";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Others from "./Components/Others.jsx";
 
 function App() {
   //State for Light and Dark Mode
@@ -51,6 +52,7 @@ function App() {
       <Alert Popup={Popup} />
       <Routes>
         <Route path="/About" element={<About Mode={Mode} />} />
+        <Route path="/Others" element={<Others  Mode={Mode} />} />
         <Route
           path="/"
           element={
